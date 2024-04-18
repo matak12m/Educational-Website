@@ -1,0 +1,79 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px
+}
+
+button {
+    padding: 20px;
+}
+
+/*----------------- classes*/
+.textBox {
+    background-color: aqua;
+    display: flex;
+    justify-content: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.lessonBox {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    max-height: 250px;
+    min-height: 250px;
+    max-width: 350px;
+    min-width: 350px;
+    padding-bottom: 10px;
+}
+
+.lessonBox a {
+    align-self: center;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 50%;
+}
+
+.lessonBox h2 {
+    align-content: center;
+    background-color: blue;
+    height: 45px;
+    text-align: center;
+    width: 100%;
+}
+
+.lessonBoxLink {
+    border-bottom: 2px solid black;
+    padding: 10px;
+}
