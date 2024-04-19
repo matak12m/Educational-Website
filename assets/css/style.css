@@ -58,7 +58,7 @@ button {
     background-color: black;
     color: white;
     font-size: 20px;
-    margin-top: 20px;
+    margin-top: auto;
     padding: 15px;
     text-align: center;
     text-decoration: none;
@@ -76,4 +76,12 @@ button {
 .lessonBoxLink {
     border-bottom: 2px solid black;
     padding: 10px;
+}
+
+.lessonBoxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 25px;
 }
