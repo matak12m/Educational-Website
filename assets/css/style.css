@@ -4,6 +4,17 @@
     padding: 0;
 }
 
+button {
+    padding: 20px;
+}
+
+code {
+    background-color: rgb(58, 57, 57);
+    border: 1px solid black;
+    color: rgb(252, 195, 10);
+    padding: 15px;
+}
+
 header {
     background-color: gray;
     display: flex;
@@ -16,30 +27,33 @@ h1 {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 400;
 }
 
 h3 {
     font-size: 18px;
+    font-weight: 400;
 }
 
 p {
     font-size: 16px
 }
 
-button {
-    padding: 20px;
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 25px;
+    padding: 25px;
 }
-
 /*----------------- classes*/
-.textBox {
-    background-color: aqua;
-    display: flex;
-    justify-content: left;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.articleHeading, .sectionHeading {
+    align-content: center;
+    background-color: blue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 100%;
 }
 
 .lessonBox {
@@ -65,19 +79,6 @@ button {
     width: 50%;
 }
 
-.lessonBox h2 {
-    align-content: center;
-    background-color: blue;
-    height: 45px;
-    text-align: center;
-    width: 100%;
-}
-
-.lessonBoxLink {
-    border-bottom: 2px solid black;
-    padding: 10px;
-}
-
 .lessonBoxContainer {
     display: flex;
     flex-wrap: wrap;
@@ -86,9 +87,28 @@ button {
     margin-top: 25px;
 }
 
-footer {
-    background-color: black;
-    color: white;
-    margin-top: 25px;
-    padding: 25px;
+.lessonBoxLink {
+    border-bottom: 2px solid black;
+    padding: 10px;
+}
+
+.lessonContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sectionHeading {
+    background-color: green;
+}
+
+.textBoxHomepage {
+    background-color: aqua;
+    display: flex;
+    justify-content: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
