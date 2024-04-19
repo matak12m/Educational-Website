@@ -36,6 +36,11 @@ h3 {
     font-weight: 400;
 }
 
+nav {
+    background-color: bisque;
+    max-width: 300px;
+}
+
 p {
     font-size: 16px
 }
