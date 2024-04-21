@@ -139,4 +139,21 @@ section {
     nav {
         display: block;
     }
+
+    .lessonBoxContainer {
+        margin-top: 50px;
+        gap: 50px;
+    }
 }
+
+@media only screen and (min-width: 1200px) {
+    .lessonBox {
+        max-width: 375px;
+        min-width: 375px;
+    }
+    
+    .lessonBoxContainer {
+        margin-top: 75px;
+        gap: 80px;
+    }
+} 
