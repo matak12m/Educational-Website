@@ -15,6 +15,12 @@ code {
     padding: 15px;
 }
 
+footer {
+    background-color: black;
+    color: white;
+    padding: 25px;
+}
+
 header {
     background-color: gray;
     display: flex;
@@ -36,21 +42,28 @@ h3 {
     font-weight: 400;
 }
 
+main {
+    display: flex;
+    min-height: 100vh;
+}
+
 nav {
     background-color: bisque;
-    max-width: 300px;
+    position: sticky;
+    float: none;
+    top: 0;
+    min-width: 300px;
+    max-height: 100%;
 }
 
 p {
     font-size: 16px
 }
 
-footer {
-    background-color: black;
-    color: white;
-    margin-top: 25px;
-    padding: 25px;
+section {
+    padding-bottom: 25px;
 }
+
 /*----------------- classes*/
 .articleHeading, .sectionHeading {
     align-content: center;
