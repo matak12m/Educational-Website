@@ -49,11 +49,12 @@ main {
 
 nav {
     background-color: bisque;
-    position: sticky;
+    display: none;
     float: none;
-    top: 0;
     min-width: 300px;
     max-height: 100%;
+    position: sticky;
+    top: 0;
 }
 
 p {
@@ -61,6 +62,7 @@ p {
 }
 
 section {
+    width: 100%;
     padding-bottom: 25px;
 }
 
@@ -129,4 +131,12 @@ section {
     padding-right: 5%;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+/*----------------------- Media queries*/
+
+@media only screen and (min-width: 768px) {
+    nav {
+        display: block;
+    }
 }
