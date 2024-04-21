@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+a {
+    font-size: 18px;
+}
+
 button {
     padding: 20px;
 }
@@ -26,6 +30,10 @@ header {
     display: flex;
     justify-content: center;
     padding: 20px;
+}
+
+header:hover {
+    cursor: pointer;
 }
 
 h1 {
@@ -119,6 +127,22 @@ section {
     padding: 20px;
 }
 
+.navlinkGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.navlinkGroup a {
+    padding: 10px;
+    color: black;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+}
+
+.navLinkHeading {
+    font-size: 24px;
+}
+
 .sectionHeading {
     background-color: green;
 }
@@ -137,7 +161,10 @@ section {
 
 @media only screen and (min-width: 768px) {
     nav {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-top: 50px;
     }
 
     .lessonBoxContainer {
