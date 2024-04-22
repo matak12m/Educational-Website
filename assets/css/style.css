@@ -222,6 +222,7 @@ section {
     }
 
     header {
+        position: static;
         justify-content: center;
         padding: 20px;
     }
