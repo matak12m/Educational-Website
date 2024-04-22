@@ -108,6 +108,7 @@ section {
     width: 45px;
     height: 50px;
     justify-content: center;
+    padding-left: 5px;
 }
 
 .hamburger:hover {
@@ -130,6 +131,7 @@ section {
     padding-bottom: 10px;
 }
 
+
 .lessonBox a {
     align-self: center;
     background-color: black;
@@ -140,6 +142,7 @@ section {
     text-align: center;
     text-decoration: none;
     width: 50%;
+    
 }
 
 .lessonBox a:hover {
@@ -248,6 +251,11 @@ section {
     .lessonBox {
         max-width: 375px;
         min-width: 375px;
+        transition: scale 1s;
+    }
+
+    .lessonBox:hover {
+        scale: 1.1;
     }
 
     .lessonContainer {
