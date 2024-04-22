@@ -3,13 +3,16 @@ function redirectToHomepage() {
 }
 
 function hamburgerMenu() {
-    const hamburger = document.getElementsByTagName("h1")[0];
-    if (hamburger.style.display != "none"){
-        alert("open hamburger")
-    }
-    else {
-        alert("close hamburger")
-    }
+    const navBar = document.getElementById("navBar");
+    console.log(navBar.style.display)
+    // if (navBar.style.display == "none"){
+    //     console.log("open hamburger")
+    //     navBar.style.display = "flex";
+    // }
+    // else {
+    //     console.log("close hamburger")
+    //     navBar.style.display = "none";
+    // }
 }
 
 //Event listensers
