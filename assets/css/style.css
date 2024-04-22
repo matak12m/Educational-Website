@@ -186,13 +186,13 @@ section {
 }
 
 .navlinkGroup {
-    padding-top: 20px;
     display: flex;
     flex-direction: column;
 }
 
 .navlinkGroup a {
     padding: 10px;
+    padding-top: 16.5px;
     color: black;
     border-bottom: 1px solid black;
     text-decoration: none;
