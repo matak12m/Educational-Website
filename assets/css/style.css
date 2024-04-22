@@ -107,12 +107,24 @@ section {
     width: 50%;
 }
 
-.lessonBoxContainer {
+.lessonContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.pageLinksContainer {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
     margin-top: 25px;
+}
+
+.lessonContainer code {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    min-height: 150px;
 }
 
 .lessonBoxLink {
@@ -124,7 +136,12 @@ section {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
+}
+
+.lessonContent p {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 .navlinkGroup {
@@ -160,26 +177,58 @@ section {
 /*----------------------- Media queries*/
 
 @media only screen and (min-width: 768px) {
+    .lessonBox {
+        max-width: 375px;
+        min-width: 375px;
+    }
+    
+    .lessonContainer {
+        display: flex;
+        flex-direction: row;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 25px;
+        min-height: 300px;
+    }
+    
+    .lessonContainer code {
+        margin: 0;
+    }
+
+    .lessonContent {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0px;
+        width: 55%;
+    }
+
+    .lessonContent p {
+        padding-right: 20px;
+    }
+    
+    code {
+        width: 45%;
+    }
+
     nav {
         display: flex;
         flex-direction: column;
         gap: 50px;
         padding-top: 50px;
     }
-
-    .lessonBoxContainer {
-        margin-top: 50px;
-        gap: 50px;
-    }
 }
 
 @media only screen and (min-width: 1200px) {
-    .lessonBox {
-        max-width: 375px;
-        min-width: 375px;
+    .lessonContainer {
+        display: flex;
+        flex-direction: row;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 30px;
+        min-height: 300px;
     }
-    
-    .lessonBoxContainer {
+
+    .pageLinksContainer {
         margin-top: 75px;
         gap: 80px;
     }
