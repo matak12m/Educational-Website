@@ -26,10 +26,14 @@ footer {
 }
 
 header {
-    background-color: gray;
+    background-color: rgb(226, 226, 226);
     display: flex;
-    justify-content: center;
-    padding: 20px;
+    gap: 5px;
+}
+
+header h1 {
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 header:hover {
@@ -75,13 +79,27 @@ section {
 }
 
 /*----------------- classes*/
-.articleHeading, .sectionHeading {
+.articleHeading,
+.sectionHeading {
     align-content: center;
     background-color: blue;
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: center;
     width: 100%;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    width: 45px;
+    height: 50px;
+    justify-content: center;
+}
+
+.hamburger span {
+    border-top: 3px solid black;
+    margin: 5px;
 }
 
 .lessonBox {
@@ -177,11 +195,25 @@ section {
 /*----------------------- Media queries*/
 
 @media only screen and (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    header h1 {
+        margin: 0;
+        padding: 0;
+    }
+    
     .lessonBox {
         max-width: 375px;
         min-width: 375px;
     }
-    
+
     .lessonContainer {
         display: flex;
         flex-direction: row;
@@ -190,7 +222,7 @@ section {
         margin-top: 25px;
         min-height: 300px;
     }
-    
+
     .lessonContainer code {
         margin: 0;
     }
@@ -205,7 +237,7 @@ section {
     .lessonContent p {
         padding-right: 20px;
     }
-    
+
     code {
         width: 45%;
     }
@@ -232,4 +264,4 @@ section {
         margin-top: 75px;
         gap: 80px;
     }
-} 
+}
