@@ -26,9 +26,13 @@ footer {
 }
 
 header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     background-color: rgb(226, 226, 226);
     display: flex;
     gap: 5px;
+    z-index: 2;
 }
 
 header h1 {
@@ -69,8 +73,7 @@ nav {
     float: none;
     min-width: 300px;
     position: fixed;
-    justify-content: space-evenly;
-    z-index: 1;
+    gap: 10px;
 }
 
 p {
@@ -202,9 +205,16 @@ section {
 
 /*----------------------- Media queries*/
 
+@media only screen and (max-width: 768px) {
+    nav {
+        height: 100%;
+    }
+}
+
 @media only screen and (min-width: 768px) {
-    body {
+    main {
         position: static !important;
+        flex-direction: row;
     }
 
     .hamburger {
@@ -257,10 +267,8 @@ section {
     nav {
         display: flex !important;
         gap: 50px;
-        padding-top: 50px;
+        padding-top: 20px;
         position: sticky;
-        max-height: 100%;
-        justify-content: space-between;
     }
 }
 

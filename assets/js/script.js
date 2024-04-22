@@ -5,7 +5,7 @@ function redirectToHomepage() {
 function hamburgerMenu() {
     const navBar = document.getElementsByTagName("nav")[0];
     const navBarDisplayStyle = window.getComputedStyle(navBar, null).getPropertyValue("display")
-    const body = document.getElementsByTagName("body")[0];
+    const main = document.getElementsByTagName("main")[0];
     //console.log("Print nav display", navBar.style.display)
     //Returns inline style = style set by javascript NOT THE CASCADING SHEET STYLE
     //getComputedStyle returns the current rendered style
@@ -13,12 +13,10 @@ function hamburgerMenu() {
     if (navBarDisplayStyle == "none"){
         console.log("open hamburger")
         navBar.style.display = "flex";
-        body.style.position = "fixed";
     }
     else {
         console.log("close hamburger")
         navBar.style.display = "none";
-        body.style.position = "static";
     }
 }
 
