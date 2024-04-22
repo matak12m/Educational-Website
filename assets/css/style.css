@@ -187,6 +187,7 @@ section {
 }
 
 .navlinkGroup {
+    padding-top: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -251,11 +252,11 @@ section {
     .lessonBox {
         max-width: 375px;
         min-width: 375px;
-        transition: scale 1s;
+        transition: scale .4s;
     }
 
     .lessonBox:hover {
-        scale: 1.1;
+        scale: 1.05;
     }
 
     .lessonContainer {
@@ -289,7 +290,6 @@ section {
     nav {
         display: flex !important;
         gap: 50px;
-        padding-top: 20px;
         position: sticky;
     }
 }
