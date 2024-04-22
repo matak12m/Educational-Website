@@ -32,8 +32,10 @@ header {
 }
 
 header h1 {
+    flex-grow: 2;
     padding-left: 10px;
     padding-top: 10px;
+    text-align: center;
 }
 
 header h1:hover {
@@ -247,7 +249,7 @@ section {
     }
 
     nav {
-        display: flex;
+        display: flex !important;
         gap: 50px;
         padding-top: 50px;
         position: sticky;
