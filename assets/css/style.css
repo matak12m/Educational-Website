@@ -58,6 +58,7 @@ h3 {
 
 main {
     display: flex;
+    position: relative;
     min-height: 100vh;
 }
 
@@ -67,8 +68,9 @@ nav {
     flex-direction: column;
     float: none;
     min-width: 300px;
-    max-height: 100%;
-    top: 50px;
+    position: fixed;
+    justify-content: space-evenly;
+    z-index: 1;
 }
 
 p {
@@ -201,6 +203,10 @@ section {
 /*----------------------- Media queries*/
 
 @media only screen and (min-width: 768px) {
+    body {
+        position: static !important;
+    }
+
     .hamburger {
         display: none;
     }
@@ -214,7 +220,7 @@ section {
         margin: 0;
         padding: 0;
     }
-    
+
     .lessonBox {
         max-width: 375px;
         min-width: 375px;
@@ -253,6 +259,8 @@ section {
         gap: 50px;
         padding-top: 50px;
         position: sticky;
+        max-height: 100%;
+        justify-content: space-between;
     }
 }
 
