@@ -19,19 +19,6 @@ code {
     justify-content: space-between;
 }
 
-.liveCode {
-    color: rgb(252, 195, 10);
-    margin: 15px;
-    width: 50%;
-}
-
-.liveCodeOutput {
-    background-color: white;
-    border: 1px solid black;
-    padding: 15px;
-    width: 50%;
-}
-
 footer {
     background-color: rgb(93, 93, 93);
     color: black;
@@ -173,6 +160,19 @@ section {
     flex-direction: column;
     animation-name: pageLoad;
     animation-duration: 1s;
+}
+
+.liveCode {
+    color: rgb(252, 195, 10);
+    margin: 15px;
+    width: 50%;
+}
+
+.liveCodeOutput {
+    background-color: white;
+    border-left: 1px solid black;
+    padding: 15px;
+    width: 50%;
 }
 
 .pageLinksContainer {
