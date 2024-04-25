@@ -52,6 +52,7 @@ header h1:hover {
 }
 
 h1 {
+    color: white;
     font-size: 24px;
 }
 
@@ -79,7 +80,6 @@ nav {
     min-width: 300px;
     position: fixed;
     gap: 10px;
-    overflow-y: scroll;
 }
 
 p {
@@ -153,6 +153,8 @@ section {
 .lessonContainer {
     display: flex;
     flex-direction: column;
+    animation-name: pageLoad;
+    animation-duration: 1s;
 }
 
 .pageLinksContainer {
@@ -227,6 +229,7 @@ section {
 @media only screen and (max-width: 768px) {
     nav {
         height: 100%;
+        overflow-y: scroll;
     }
 }
 
@@ -266,7 +269,6 @@ section {
         margin-left: 30px;
         margin-right: 30px;
         margin-top: 25px;
-        min-height: 300px;
     }
 
     .lessonContainer code {
@@ -302,7 +304,7 @@ section {
         margin-left: 80px;
         margin-right: 80px;
         margin-top: 30px;
-        min-height: 300px;
+        height: 300px;
     }
 
     .pageLinksContainer {
@@ -310,3 +312,9 @@ section {
         gap: 80px;
     }
 }
+
+/*-------------------Animations*/
+@keyframes pageLoad {
+    0% {height: 0;}
+    100% {height: 300px;}
+  }
