@@ -4,19 +4,19 @@ function redirectToHomepage() {
 
 function hamburgerMenu() {
     const navBar = document.getElementsByTagName("nav")[0];
-    const navBarDisplayStyle = window.getComputedStyle(navBar, null).getPropertyValue("display")
-    const main = document.getElementsByTagName("main")[0];
+    const navBarWidthStyle = window.getComputedStyle(navBar, null).getPropertyValue("width")
     //console.log("Print nav display", navBar.style.display)
     //Returns inline style = style set by javascript NOT THE CASCADING SHEET STYLE
     //getComputedStyle returns the current rendered style
+    console.log(navBarWidthStyle)
 
-    if (navBarDisplayStyle == "none"){
+    if (navBarWidthStyle == "0px"){
         console.log("open hamburger")
-        navBar.style.display = "flex";
+        navBar.style.width = "300px";
     }
     else {
         console.log("close hamburger")
-        navBar.style.display = "none";
+        navBar.style.width = "0%";
     }
 }
 

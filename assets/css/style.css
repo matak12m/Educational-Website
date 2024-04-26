@@ -80,10 +80,10 @@ main {
 
 nav {
     background-color: #C0C0C0;
-    display: none;
     flex-direction: column;
+    width: 0;
+    transition: width 1s;
     float: none;
-    min-width: 300px;
     position: fixed;
     justify-content: space-between;
     gap: 10px;
@@ -364,9 +364,9 @@ section {
     }
 
     nav {
-        display: flex !important;
         gap: 50px;
         position: sticky;
+        min-width: 300px !important;
     }
     @keyframes pageLoad {
         0% {height: 0;}
@@ -399,11 +399,6 @@ section {
 }
 
 /*-------------------Animations*/
-
-
-
-
-
 
 /* colour pallete:
   orange: #FF6700
