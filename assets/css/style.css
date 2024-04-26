@@ -36,7 +36,6 @@ header {
     top: 0;
     background-color: #00274D;
     display: flex;
-    gap: 5px;
     z-index: 2;
 }
 
@@ -139,6 +138,7 @@ section {
 .hamburger span {
     border-top: 3px solid white;
     margin: 4px;
+    border-radius: 2px;
 }
 
 .lessonBox {
