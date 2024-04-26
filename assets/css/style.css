@@ -135,6 +135,7 @@ section {
 
 .hamburger:hover {
     cursor: pointer;
+    background-color: #FF6700;
 }
 
 .hamburger span {
