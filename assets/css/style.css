@@ -85,7 +85,7 @@ nav {
     float: none;
     min-width: 300px;
     position: fixed;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 10px;
 }
 
@@ -105,7 +105,7 @@ section {
     color: white;
     align-content: center;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 14px;
     text-align: center;
     width: 100%;
 }
