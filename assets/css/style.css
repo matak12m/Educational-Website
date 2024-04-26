@@ -36,6 +36,8 @@ header {
     top: 0;
     background-color: #00274D;
     display: flex;
+    border-bottom: 1px solid black;
+    padding: 5px;
     gap: 5px;
     z-index: 2;
 }
@@ -50,7 +52,6 @@ header h1 {
     flex-grow: 2;
     padding: 10px;
     text-align: center;
-    border-bottom: 1px solid black;
     transition: 150ms;
 }
 
@@ -118,8 +119,9 @@ section {
     border: 1px solid black;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100%;    
     height: 100%;
+
 }
 
 .hamburger {
@@ -136,7 +138,7 @@ section {
 }
 
 .hamburger span {
-    border-top: 3px solid #00274D;
+    border-top: 4px solid #ffffff;
     margin: 4px;
 }
 
