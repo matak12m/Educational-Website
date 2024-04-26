@@ -139,6 +139,7 @@ section {
 .hamburger span {
     border-top: 4px solid #ffffff;
     margin: 4px;
+    border-radius: 2px;
 }
 
 .lessonBox {
