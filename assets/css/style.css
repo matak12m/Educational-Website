@@ -4,6 +4,7 @@
     padding: 0;
 }
 body {
+    max-width: 100%;
     background-color: #EBEBEB;
 }
 
@@ -204,9 +205,8 @@ section {
 }
 
 .lessonContainer code {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
     min-height: 300px;
 }
 
@@ -297,7 +297,6 @@ section {
     }
 
     .liveCode {
-        width: 100%;
         min-height: 200px;
     }
     .liveCodeOutput {
