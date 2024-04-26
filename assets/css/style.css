@@ -26,7 +26,6 @@ footer {
 }
 
 header {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     background-color: rgb(93, 93, 93);
@@ -131,11 +130,11 @@ section {
     max-width: 350px;
     min-width: 350px;
     padding-bottom: 10px;
-    transition: scale .4s;
+    transition: transform .4s;
 }
 
 .lessonBox:hover {
-    scale: 1.05;
+    transform: scale(1.05);
 }
 
 .lessonBox a {
