@@ -154,10 +154,6 @@ section {
     transition: transform .4s;
 }
 
-.lessonBox:hover {
-    transform: scale(1.05);
-}
-
 .lessonBox a {
     align-self: center;
     background-color: #00274D;
@@ -316,6 +312,10 @@ section {
     main {
         position: static !important;
         flex-direction: row;
+    }
+
+    .lessonBox:hover {
+        transform: scale(1.05);
     }
 
     .hamburger {
