@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: #EBEBEB;
+}
 
 a {
     font-size: 18px;
@@ -13,15 +16,15 @@ button {
 }
 
 code {
-    background-color: rgb(98, 98, 98);
-    border: 1px solid black;
+    background-color: #504C49;
+    border: 1px solid #00274D;
     display: flex;
     justify-content: space-between;
 }
 
 footer {
-    background-color: rgb(93, 93, 93);
-    color: black;
+    background-color: #00274D;
+    color: white;
     padding: 25px;
 }
 
@@ -29,14 +32,14 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: rgb(93, 93, 93);
+    background-color: #00274D;
     display: flex;
     gap: 5px;
     z-index: 2;
 }
 
 header h1:hover {
-    background-color: aliceblue;
+    background-color: #004E98;
 }
 
 header h1 {
@@ -45,6 +48,8 @@ header h1 {
     flex-grow: 2;
     padding: 10px;
     text-align: center;
+    border-bottom: 1px solid black;
+    transition: 150ms;
 }
 
 header h1:hover {
@@ -73,7 +78,7 @@ main {
 }
 
 nav {
-    background-color: rgb(195, 195, 195);
+    background-color: #C0C0C0;
     display: none;
     flex-direction: column;
     float: none;
@@ -95,7 +100,7 @@ section {
 /*----------------- classes*/
 .articleHeading,
 .sectionHeading {
-    background-color: rgb(0, 0, 0);
+    background-color: #00274D;
     color: white;
     align-content: center;
     padding-top: 15px;
@@ -118,12 +123,12 @@ section {
 }
 
 .hamburger span {
-    border-top: 3px solid black;
+    border-top: 3px solid #00274D;
     margin: 4px;
 }
 
 .lessonBox {
-    background-color: rgb(189, 189, 189);
+    background-color: #C0C0C0;
     display: flex;
     flex-direction: column;
     max-height: 250px;
@@ -140,7 +145,7 @@ section {
 
 .lessonBox a {
     align-self: center;
-    background-color: black;
+    background-color: #00274D;
     color: white;
     font-size: 20px;
     margin-top: auto;
@@ -148,11 +153,12 @@ section {
     text-align: center;
     text-decoration: none;
     width: 50%;
+    transition: 150ms;
     
 }
 
 .lessonBox a:hover {
-    background-color: rgb(71, 59, 59);
+    background-color: #FF6700;
 }
 
 .lessonContainer {
@@ -170,7 +176,7 @@ section {
 
 .liveCodeOutput {
     background-color: white;
-    border-left: 1px solid black;
+    border-left: 1px solid #00274D;
     padding: 15px;
     width: 50%;
 }
@@ -191,7 +197,7 @@ section {
 }
 
 .lessonBoxLink {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #00274D;
     padding: 10px;
 }
 
@@ -200,6 +206,7 @@ section {
     flex-direction: column;
     gap: 20px;
     min-height: 300px;
+    background-color: #C0C0C0;
 }
 
 .lessonContent p {
@@ -217,12 +224,13 @@ section {
     padding: 10px;
     padding-top: 16.5px;
     color: black;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #00274D;
     text-decoration: none;
+    transition: 150ms;
 }
 
 .navlinkGroup a:hover {
-    background-color: antiquewhite;
+    background-color: #004E98;
 }
 
 .navLinkHeading {
@@ -230,17 +238,28 @@ section {
 }
 
 .sectionHeading {
-    background-color: rgb(0, 0, 0);
+    background-color: #00274D;
 }
 
 .textBoxHomepage {
-    background-color: rgb(207, 207, 207);
+    background-color: #EBEBEB;
     display: flex;
     justify-content: left;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+/*----------------------- IDs*/
+#navLinkHeadingCurrent {
+    background-color: #00274D;
+    color:white;
+    font-size: 24px;
+    transition: 150ms;
+}
+
+#navLinkHeadingCurrent:hover {
+    background-color: #FF6700;
 }
 
 /*----------------------- Media queries*/
@@ -250,6 +269,21 @@ section {
         height: 100%;
         overflow-y: scroll;
     }
+    code {
+        flex-direction: column;
+    }
+    .liveCode {
+        width: 100%;
+        min-height: 200px;
+    }
+    .liveCodeOutput {
+        width:auto;
+        min-height: 200px;
+    }
+    @keyframes pageLoad {
+        0% {height: 0;}
+        100% {height: 782px;}
+      }
 }
 
 @media only screen and (min-width: 768px) {
@@ -340,3 +374,21 @@ section {
     0% {height: 0;}
     100% {height: 602px;}
   }
+
+
+
+
+
+/* colour pallete:
+  orange: #FF6700
+  greay: #C0C0C0
+  light greay: #EBEBEB
+  dark blue: #00274D
+  light blue: #004E98
+  code background: #504C49
+
+
+
+
+
+*/
