@@ -132,10 +132,11 @@ section {
 
 .hamburger:hover {
     cursor: pointer;
+    background-color: #FF6700;
 }
 
 .hamburger span {
-    border-top: 3px solid #00274D;
+    border-top: 3px solid white;
     margin: 4px;
 }
 
