@@ -12,12 +12,14 @@ button {
     padding: 20px;
 }
 
+/*
 code {
     background-color: rgb(98, 98, 98);
     border: 1px solid black;
     display: flex;
     justify-content: space-between;
 }
+*/
 
 footer {
     background-color: rgb(93, 93, 93);
@@ -103,6 +105,16 @@ section {
     width: 100%;
 }
 
+
+.codeContainer {
+    background-color: rgb(98, 98, 98);
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
 .hamburger {
     display: flex;
     flex-direction: column;
@@ -155,16 +167,19 @@ section {
 }
 
 .lessonContainer {
+    background-color: white;
     display: flex;
     flex-direction: column;
     animation-name: pageLoad;
     animation-duration: 1s;
+    position: relative;
 }
 
 .liveCode {
     color: rgb(252, 195, 10);
-    margin: 15px;
+    padding: 15px;
     width: 50%;
+    display: block;
 }
 
 .liveCodeOutput {
@@ -337,5 +352,5 @@ section {
 /*-------------------Animations*/
 @keyframes pageLoad {
     0% {height: 0;}
-    100% {height: 602px;}
+    100% {height: 632px;}
   }
