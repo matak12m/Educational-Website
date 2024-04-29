@@ -97,6 +97,26 @@ section {
     padding-bottom: 25px;
 }
 
+textarea {
+    resize: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+/*-----------Id*/
+#lessonOne {
+    z-index: 1;
+}
+
+#lessonTwo {
+    z-index: 2;
+}
+
+#lessonThree {
+    z-index: 3;
+}
+
 /*----------------- classes*/
 .articleHeading,
 .sectionHeading {
@@ -179,10 +199,13 @@ section {
 }
 
 .liveCode {
-    color: rgb(252, 195, 10);
     padding: 15px;
-    width: 95%;
+    width: 50%;
     display: block;
+}
+
+.liveCode textarea {
+    color: rgb(252, 195, 10); 
 }
 
 .liveCodeOutput {
@@ -201,6 +224,12 @@ section {
 }
 
 .lessonContainer code {
+    padding-right: 20px;
+    padding-bottom: 20px;
+    min-height: 300px;
+}
+
+.lessonContainer form {
     padding-right: 20px;
     padding-bottom: 20px;
     min-height: 300px;
@@ -292,6 +321,10 @@ section {
         min-height: 200px;
     }
 
+    .lessonContainer form {
+        min-height: 200px;
+    }
+
     .liveCode {
         min-height: 200px;
     }
@@ -347,6 +380,10 @@ section {
         margin: 0;
     }
 
+    .lessonContainer form {
+        margin: 0;
+    }
+
     .lessonContent {
         flex-direction: column;
         gap: 20px;
@@ -358,7 +395,7 @@ section {
         padding-right: 20px;
     }
 
-    code {
+    code, form {
         width: 100%;
     }
 

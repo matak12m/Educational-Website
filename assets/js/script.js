@@ -25,7 +25,22 @@ function hamburgerMenu() {
 //Javascript styles take priority and cannot be affected by media queries
 //SOLVED** solved by adding an !important to the media query, this overwrite the inline javascript style
 
+//Takes value from input and puts it into output innerHTML so that the textarea doesnt start displayinh javascript 
+function receiveTextareaChange(element) {
+    let siblingCodeOutput = element.parentElement.parentElement.childNodes[3]
+    console.log(element.value)
+    siblingCodeOutput.innerHTML = element.value;
+}
+
+
+
 //Event listensers
 document.getElementsByTagName("h1")[0].addEventListener("click", redirectToHomepage); 
 
 document.getElementsByClassName("hamburger")[0].addEventListener("click", hamburgerMenu); 
+
+//Gets list of text areas and when they change eg someone types sends it to function
+const textareaArray = document.querySelectorAll('.liveCode textarea');
+textareaArray.forEach(element => {
+    element.addEventListener('change', () => receiveTextareaChange(element))
+});
