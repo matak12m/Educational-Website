@@ -42,5 +42,6 @@ document.getElementsByClassName("hamburger")[0].addEventListener("click", hambur
 //Gets list of text areas and when they change eg someone types sends it to function
 const textareaArray = document.querySelectorAll('.liveCode textarea');
 textareaArray.forEach(element => {
+    receiveTextareaChange(element); //Fires once when page loads so that outputs will use what was typed inside visual studio code
     element.addEventListener('change', () => receiveTextareaChange(element))
 });
