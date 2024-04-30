@@ -93,16 +93,44 @@
                 <div class="lessonContent">
                     <h3 class="articleHeading">Lesson Two: Breakpoints</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. icitur, facilisis commodo eros.
-                        Phasellus
-                        mollis lacus nec metus congue pulvinar. Praesent lobortis mauris quis mi cursus, et vulputate
-                        leo
-                        molestie. Etiam malesuada eget nisi in condiment
+                        Media queries are very powerful but to bring out their full power we can use multiple queries or
+                        breakpoints on a page to add support for multiple different screen sizes/devices.
+
+                        <br><br>You can add as many breakpoints as you want but a good minimum is one for mobile (less than
+                            600px), tablets (more than 600px) and desktop (768px or more).
                     </p>
                 </div>
                 <div class="codeContainer">
                     <form class="liveCode">
-                        <textarea>code</textarea>
+                        <textarea>
+<div id="lessonTwo">
+    <p>
+        Hey Im an even cooler paragraph than the last guy.
+        <br><br>At mobile size I will have a blue background,
+        <br>At Tablet size it will be green,
+        <br>At Desktop it will be red.
+    </p>
+</div>
+
+<style>
+    /*Mobile size*/
+    #lessonTwo {
+        background-color: aqua;
+    }
+    /*Tablet size*/
+    @media only screen and (min-width: 600px) {
+        #lessonTwo {
+            background-color: rgb(56, 111, 26);
+        }
+    }
+    /*Desktop size*/
+    @media only screen and (min-width: 768px) {
+        #lessonTwo {
+            background-color: rgb(160, 20, 20);
+        }
+    }
+</style>
+                    </textarea>
                     </form>
                     <div class="liveCodeOutput">
                         live code
