@@ -53,16 +53,35 @@
                 <div class="lessonContent">
                     <h3 class="articleHeading">Lesson One: Media Queries</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. icitur, facilisis commodo eros.
-                        Phasellus
-                        mollis lacus nec metus congue pulvinar. Praesent lobortis mauris quis mi cursus, et vulputate
-                        leo
-                        molestie. Etiam malesuada eget nisi in condiment
+                        Media queries are the most important feature a web developer will use when making a responsive
+                        layout, they are esstentially CSS' version of if statements that allow you to specify a
+                        condition and change an element or classes style depending on its current condition.
+
+                        <br><br>Media queries are commonly used for making your webpage appear differently depending on
+                        the users screensize or screen orintation.
+
+                        <br><br>Below is the code to change a div containers background color depending on if the
+                        browser window is bigger than 1000px
                     </p>
                 </div>
                 <div class="codeContainer">
                     <form class="liveCode">
-                        <textarea>code</textarea>
+                        <textarea>
+<div id="lessonOne">
+    <p>
+        Hi I am a cool paragraph and will change to a green 
+        background at a width of 1000px
+    </p>
+</div>
+
+<style>
+    @media only screen and (max-width: 1000px) {
+        #lessonOne {
+            background-color: rgb(93, 161, 56);
+        }
+    }
+</style>
+                    </textarea>
                     </form>
                     <div class="liveCodeOutput">
                         live code

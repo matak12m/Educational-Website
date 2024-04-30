@@ -124,7 +124,7 @@ textarea {
     color: white;
     align-content: center;
     padding-top: 15px;
-    padding-bottom: 14px;
+    padding-bottom: 15px;
     text-align: center;
     width: 100%;
 }
@@ -200,7 +200,7 @@ textarea {
 
 .liveCode {
     padding: 15px;
-    width: 50%;
+    width: 95%;
     display: block;
 }
 
@@ -244,6 +244,7 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    min-width: 100%;
     min-height: 300px;
     background-color: #C0C0C0;
 }
@@ -278,6 +279,7 @@ textarea {
 
 .sectionHeading {
     background-color: #00274D;
+    border-left: 1px solid black;
 }
 
 .textBoxHomepage {
@@ -343,6 +345,10 @@ textarea {
     main {
         position: static !important;
         flex-direction: row;
+    }
+
+    .liveCode {
+        width: 50%;
     }
 
     .lessonBox:hover {
