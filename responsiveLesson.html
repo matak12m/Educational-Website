@@ -96,8 +96,9 @@
                         Media queries are very powerful but to bring out their full power we can use multiple queries or
                         breakpoints on a page to add support for multiple different screen sizes/devices.
 
-                        <br><br>You can add as many breakpoints as you want but a good minimum is one for mobile (less than
-                            600px), tablets (more than 600px) and desktop (768px or more).
+                        <br><br>You can add as many breakpoints as you want but a good minimum is one for mobile (less
+                        than
+                        600px), tablets (more than 600px) and desktop (768px or more).
                     </p>
                 </div>
                 <div class="codeContainer">
@@ -142,16 +143,40 @@
                 <div class="lessonContent">
                     <h3 class="articleHeading">Lesson Three: Mobile First Design</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. icitur, facilisis commodo eros.
-                        Phasellus
-                        mollis lacus nec metus congue pulvinar. Praesent lobortis mauris quis mi cursus, et vulputate
-                        leo
-                        molestie. Etiam malesuada eget nisi in condiment
+                        Nowadays more people access the internet from their phones than using a desktop so as a designer
+                        it is good to approach web and ui design from a mobile first design (Developing the website to
+                        use mobile styles by default and changing to desktop with media queries).
+
+                        <br><br>The website will load faster and it is easier to blow up elements to a bigger screen
+                        than trying to shrink them down and reposition later.
                     </p>
                 </div>
                 <div class="codeContainer">
                     <form class="liveCode">
-                        <textarea>code</textarea>
+                        <textarea>
+<div id="lessonThree">
+    <p>
+        Oh hey, its me the coolest paragraph on the 
+        page and would you believe it, but by default 
+        I am taking the mobile styles first and then 
+        being changed if you have a bigger screen
+    </p>
+</div>
+
+<style>
+    /*Mobile size does not use a media query but is just the default style used*/
+    #lessonThree {
+        background-color: aqua;
+    }
+
+    /*Desktop size*/
+    @media only screen and (min-width: 768px) {
+        #lessonThree {
+            background-color: rgb(231, 113, 255);
+        }
+    }
+</style>
+                    </textarea>
                     </form>
                     <div class="liveCodeOutput">
                         live code
