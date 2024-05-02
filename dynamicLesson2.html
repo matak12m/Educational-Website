@@ -53,19 +53,42 @@
                 <div class="lessonContent">
                     <h3 class="articleHeading">Lesson One: Intro to jQuery</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. icitur, facilisis commodo eros.
-                        Phasellus
-                        mollis lacus nec metus congue pulvinar. Praesent lobortis mauris quis mi cursus, et vulputate
-                        leo
-                        molestie. Etiam malesuada eget nisi in condiment
+
+                        jQuery is a popular JavaScript library that simplifies HTML document 
+                        traversing, event handling, animating, and Ajax interactions for 
+                        rapid web development. For web designers and developers aiming to 
+                        enhance the interactivity and responsiveness of their websites, 
+                        jQuery is an invaluable tool. This tutorial will introduce you to 
+                        jQuery basics and demonstrate how you can use it to create more 
+                        responsive and interactive web designs.
                     </p>
                 </div>
                 <div class="codeContainer">
                     <form class="liveCode">
-                        <textarea>code</textarea>
+                        <textarea>
+<button id="clickMe">Click me!</button>
+<script>
+$(document).ready(function(){
+$("#clickMe").click(function(){
+alert("Button was clicked!");
+});
+});
+</script>
+                        </textarea>
                     </form>
                     <div class="liveCodeOutput">
-                        live code
+                        <div class="codeContainer">
+                            <form class="liveCode">
+                                <button id="clickMe">Click me!</button>
+                                <script>
+                                $(document).ready(function(){
+                                $("#clickMe").click(function(){
+                                alert("Button was clicked!");
+                                });
+                                });
+                                </script>
+                                            
+                            </form>
                     </div>
                 </div>
             </article>
