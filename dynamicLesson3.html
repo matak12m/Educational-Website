@@ -63,62 +63,10 @@
                 <div class="codeContainer">
                     <form class="liveCode">
                         <textarea>
-                            
-                            var id = null;
-                            function myMove() {
-                              var elem = document.getElementById("myAnimation");
-                              var pos = 0;
-                              clearInterval(id);
-                              id = setInterval(frame, 10);
-                              function frame() {
-                                if (pos == 350) {
-                                  clearInterval(id);
-                                } else {
-                                  pos++;
-                                  elem.style.top = pos + 'px';
-                                  elem.style.left = pos + 'px';
-                                }
-                              }
-                            }
-                            
-                            </textarea>
+                        </textarea>
                     </form>
                     <div class="liveCodeOutput">
-                        <!DOCTYPE html>
-                        <html>
-                        <style>
-                        #container {
-                          width: 400px;
-                          height: 400px;
-                          position: relative;
-                          background: yellow;
-                        }
-                        #animate {
-                          width: 50px;
-                          height: 50px;
-                          position: absolute;
-                          background-color: red;
-                        }
-                        </style>
-                        <body>
-                        <script>
-                            var id = null;
-                            function myMove() {
-                              var elem = document.getElementById("myAnimation");
-                              var pos = 0;
-                              clearInterval(id);
-                              id = setInterval(frame, 10);
-                              function frame() {
-                                if (pos == 350) {
-                                  clearInterval(id);
-                                } else {
-                                  pos++;
-                                  elem.style.top = pos + 'px';
-                                  elem.style.left = pos + 'px';
-                                }
-                              }
-                            }
-                            </script>
+                       
                     </div>
                 </div>
             </article>
@@ -127,9 +75,9 @@
                 <div class="lessonContent">
                     <h3 class="articleHeading">Lesson Two: Transitions</h3>
                     <p>
-                        Transitions are a tool web designers like to use combining aspects<br>
-                        of CSS with touch of JavaScript. WHile animating with CSS has limitations<br>
-                        it is an important tool in any web designers tool kit.<br>
+                        Transitions are a tool web designers like to use combining aspects
+                        of CSS with touch of JavaScript. WHile animating with CSS has limitations
+                        it is an important tool in any web designers tool kit.
                         <br>
                         When applied correctly CSS transitions can make animations and interactions
                         more effectively than most JavaScript libraries
@@ -138,100 +86,11 @@
                 <div class="codeContainer">
                     <form class="liveCode">
                         <textarea>
-                            <!DOCTYPE html>
-                            <html>
-                            <style>
-                            #container {
-                              width: 400px;
-                              height: 400px;
-                              position: relative;
-                              background: yellow;
-                            }
-                            #animate {
-                              width: 50px;
-                              height: 50px;
-                              position: absolute;
-                              background-color: red;
-                            }
-                            </style>
-                            <body>
-                            
-                            <p><button onclick="myMove()">Click Me</button></p> 
-                            
-                            <div id ="container">
-                              <div id ="animate"></div>
-                            </div>
-                            
-                            <script>
-                            function myMove() {
-                              let id = null;
-                              const elem = document.getElementById("animate");   
-                              let pos = 0;
-                              clearInterval(id);
-                              id = setInterval(frame, 5);
-                              function frame() {
-                                if (pos == 350) {
-                                  clearInterval(id);
-                                } else {
-                                  pos++; 
-                                  elem.style.top = pos + "px"; 
-                                  elem.style.left = pos + "px"; 
-                                }
-                              }
-                            }
-                            </script>
-                            
-                            </body>
-                            </html>
+                          
                         </textarea>
                     </form>
                     <div class="liveCodeOutput">
-                        <p>
-                        <!DOCTYPE html>
-                        <html>
-                        <style>
-                        #container {
-                          width: 400px;
-                          height: 400px;
-                          position: relative;
-                          background: yellow;
-                        }
-                        #animate {
-                          width: 50px;
-                          height: 50px;
-                          position: absolute;
-                          background-color: red;
-                        }
-                        </style>
-                        <body>
                         
-                       <button onclick="myMove()">Click Me</button></p> 
-                        
-                        <div id ="container">
-                          <div id ="animate"></div>
-                        </div>
-                        
-                        <script>
-                        function myMove() {
-                          let id = null;
-                          const elem = document.getElementById("animate");   
-                          let pos = 0;
-                          clearInterval(id);
-                          id = setInterval(frame, 5);
-                          function frame() {
-                            if (pos == 350) {
-                              clearInterval(id);
-                            } else {
-                              pos++; 
-                              elem.style.top = pos + "px"; 
-                              elem.style.left = pos + "px"; 
-                            }
-                          }
-                        }
-                        </script>
-                        
-                        </body>
-                        </html>
                     </div>
                 </div>
             </article>
@@ -241,7 +100,6 @@
         <p>Hello I am the footer</p>
     </footer>
     <script src="assets/js/script.js"> </script>
-    <script src="assets/js/jquery-3.7.1.min.js"> </script>
 
 </body>
 
