@@ -7,6 +7,7 @@
     <meta name="author" content="Matt Martinek Naoise Ryan Dean Flood">
     <title>Educational Website</title>
     <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/jquery-3.7.1.min.js"> </script>
 </head>
 
 <body>
@@ -68,11 +69,11 @@
                         <textarea>
 <button id="clickMe">Click me!</button>
 <script>
-$(document).ready(function(){
-$("#clickMe").click(function(){
-alert("Button was clicked!");
-});
-});
+    $(document).ready(function(){
+        $("#clickMe").click(function(){
+            alert("Button was clicked!");
+        });
+    });
 </script>
                         </textarea>
                     </form>
