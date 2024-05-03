@@ -22,28 +22,28 @@
         <nav style="z-index: 4;">
             <div class="navlinkGroup">
                 <a href="responsiveLesson.html" class="navLinkHeading">Responsive web design</a>
-                <a href="responsiveLesson.html#lessonOne">Lesson one: Media Queries</a>
-                <a href="responsiveLesson.html#lessonTwo">Lesson two: Breakpoints</a>
-                <a href="responsiveLesson.html#lessonThree">Lesson three: Importance of Mobile first</a>
+                <a href="responsiveLesson.html#lessonOne">Lesson One: Media Queries</a>
+                <a href="responsiveLesson.html#lessonTwo">Lesson Two: Breakpoints</a>
+                <a href="responsiveLesson.html#lessonThree">Lesson Three: Importance of Mobile first</a>
             </div>
             <div class="navlinkGroup">
                 <a href="dynamicLesson1.html" class="navLinkHeading">Javascript</a>
-                <a href="dynamicLesson1.html">Lesson one: Intro to Javascript</a>
+                <a href="dynamicLesson1.html">Lesson One: Intro to Javascript</a>
             </div>
             <div class="navlinkGroup">
                 <a href="dynamicLesson2.html" class="navLinkHeading">jQuery</a>
-                <a href="dynamicLesson2.html">Lesson one: Intro to jQuery</a>
+                <a href="dynamicLesson2.html">Lesson One: Intro to jQuery</a>
             </div>
             <div class="navlinkGroup">
                 <a href="dynamicLesson3.html" id="navLinkHeadingCurrent">Animations and Transitions</a>
-                <a href="dynamicLesson3.html">Lesson one: Animations</a>
-                <a href="dynamicLesson3.html">Lesson one: Transitions</a>
+                <a href="dynamicLesson3.html">Lesson One: Animations</a>
+                <a href="dynamicLesson3.html">Lesson Two: Transitions</a>
             </div>
             <div class="navlinkGroup">
                 <a href="dynamicLesson4.html" class="navLinkHeading">Validation and Models</a>
-                <a href="dynamicLesson4.html">Lesson one: Image Slider</a>
+                <a href="dynamicLesson4.html">Lesson One: Image Slider</a>
                 <a href="dynamicLesson4.html">Lesson Two: Modal Dialog</a>
-                <a href="dynamicLesson4.html">Lesson Two: Validation</a>
+                <a href="dynamicLesson4.html">Lesson Three: Validation</a>
             </div>
         </nav>
         <section>
@@ -53,19 +53,72 @@
                 <div class="lessonContent">
                     <h3 class="articleHeading">Lesson One: Animations</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. icitur, facilisis commodo eros.
-                        Phasellus
-                        mollis lacus nec metus congue pulvinar. Praesent lobortis mauris quis mi cursus, et vulputate
-                        leo
-                        molestie. Etiam malesuada eget nisi in condiment
+                        When it comes to designing websites with animations Javascript
+                        is perfect for filling in where CSS starts to become lacking.
+
+                        For instance moving along a line using timing functions or an animation
+                        on a canvas
                     </p>
                 </div>
                 <div class="codeContainer">
                     <form class="liveCode">
-                        <textarea>code</textarea>
+                        <textarea>
+                            
+                            var id = null;
+                            function myMove() {
+                              var elem = document.getElementById("myAnimation");
+                              var pos = 0;
+                              clearInterval(id);
+                              id = setInterval(frame, 10);
+                              function frame() {
+                                if (pos == 350) {
+                                  clearInterval(id);
+                                } else {
+                                  pos++;
+                                  elem.style.top = pos + 'px';
+                                  elem.style.left = pos + 'px';
+                                }
+                              }
+                            }
+                            
+                            </textarea>
                     </form>
                     <div class="liveCodeOutput">
-                        live code
+                        <!DOCTYPE html>
+                        <html>
+                        <style>
+                        #container {
+                          width: 400px;
+                          height: 400px;
+                          position: relative;
+                          background: yellow;
+                        }
+                        #animate {
+                          width: 50px;
+                          height: 50px;
+                          position: absolute;
+                          background-color: red;
+                        }
+                        </style>
+                        <body>
+                        <script>
+                            var id = null;
+                            function myMove() {
+                              var elem = document.getElementById("myAnimation");
+                              var pos = 0;
+                              clearInterval(id);
+                              id = setInterval(frame, 10);
+                              function frame() {
+                                if (pos == 350) {
+                                  clearInterval(id);
+                                } else {
+                                  pos++;
+                                  elem.style.top = pos + 'px';
+                                  elem.style.left = pos + 'px';
+                                }
+                              }
+                            }
+                            </script>
                     </div>
                 </div>
             </article>
@@ -74,19 +127,111 @@
                 <div class="lessonContent">
                     <h3 class="articleHeading">Lesson Two: Transitions</h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. icitur, facilisis commodo eros.
-                        Phasellus
-                        mollis lacus nec metus congue pulvinar. Praesent lobortis mauris quis mi cursus, et vulputate
-                        leo
-                        molestie. Etiam malesuada eget nisi in condiment
+                        Transitions are a tool web designers like to use combining aspects<br>
+                        of CSS with touch of JavaScript. WHile animating with CSS has limitations<br>
+                        it is an important tool in any web designers tool kit.<br>
+                        <br>
+                        When applied correctly CSS transitions can make animations and interactions
+                        more effectively than most JavaScript libraries
                     </p>
                 </div>
                 <div class="codeContainer">
                     <form class="liveCode">
-                        <textarea>code</textarea>
+                        <textarea>
+                            <!DOCTYPE html>
+                            <html>
+                            <style>
+                            #container {
+                              width: 400px;
+                              height: 400px;
+                              position: relative;
+                              background: yellow;
+                            }
+                            #animate {
+                              width: 50px;
+                              height: 50px;
+                              position: absolute;
+                              background-color: red;
+                            }
+                            </style>
+                            <body>
+                            
+                            <p><button onclick="myMove()">Click Me</button></p> 
+                            
+                            <div id ="container">
+                              <div id ="animate"></div>
+                            </div>
+                            
+                            <script>
+                            function myMove() {
+                              let id = null;
+                              const elem = document.getElementById("animate");   
+                              let pos = 0;
+                              clearInterval(id);
+                              id = setInterval(frame, 5);
+                              function frame() {
+                                if (pos == 350) {
+                                  clearInterval(id);
+                                } else {
+                                  pos++; 
+                                  elem.style.top = pos + "px"; 
+                                  elem.style.left = pos + "px"; 
+                                }
+                              }
+                            }
+                            </script>
+                            
+                            </body>
+                            </html>
+                        </textarea>
                     </form>
                     <div class="liveCodeOutput">
-                        live code
+                        <p>
+                        <!DOCTYPE html>
+                        <html>
+                        <style>
+                        #container {
+                          width: 400px;
+                          height: 400px;
+                          position: relative;
+                          background: yellow;
+                        }
+                        #animate {
+                          width: 50px;
+                          height: 50px;
+                          position: absolute;
+                          background-color: red;
+                        }
+                        </style>
+                        <body>
+                        
+                       <button onclick="myMove()">Click Me</button></p> 
+                        
+                        <div id ="container">
+                          <div id ="animate"></div>
+                        </div>
+                        
+                        <script>
+                        function myMove() {
+                          let id = null;
+                          const elem = document.getElementById("animate");   
+                          let pos = 0;
+                          clearInterval(id);
+                          id = setInterval(frame, 5);
+                          function frame() {
+                            if (pos == 350) {
+                              clearInterval(id);
+                            } else {
+                              pos++; 
+                              elem.style.top = pos + "px"; 
+                              elem.style.left = pos + "px"; 
+                            }
+                          }
+                        }
+                        </script>
+                        
+                        </body>
+                        </html>
                     </div>
                 </div>
             </article>
