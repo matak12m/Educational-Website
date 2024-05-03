@@ -71,7 +71,7 @@
                                 position: absolute;
                                 background-color: yellow;
                             }
-                            .box3
+                            .box2
                             {
                                 width: 100%;
                                 height:auto;
@@ -97,9 +97,14 @@
                                 position: absolute;
                                 top: 50%;
                                 width: auto;
-                                padding: 8px;
-                                color: grey;
-                                font-size: 16px;
+                                padding: 16px;
+                                margin-top: -22px;
+                                color: white;
+                                font-weight: bold;
+                                font-size: 18px;
+                                transition: 0.6s ease;
+                                border-radius: 0 3px 3px 0;
+                                user-select: none;
                             }
                             .next
                             {
@@ -305,81 +310,107 @@
                 <div class="codeContainer">
                     <form class="liveCode">
                         <textarea>
-                            <!DOCTYPE html>
                             <html>
-                            <head>
-                                <meta name="viewport" content="width=device-width, initial-scale=1">
-                                <style>
-                                    body {font-family: Arial, Helvetica, sans-serif;}
-                                    .modal
-                                    {
-                                        display: none;
-                                        position: fixed;
-                                        z-index: 1;
-                                        padding-top: 100px;
-                                        left: 0;
-                                        top: 0;
-                                        width: 100%;
-                                        height: 100%;
-                                        overflow: auto;
-                                        background-color: rgb(0,0,0);
-                                    }
-                                    .modal-content
-                                    {
-                                        background-color: grey;
-                                        margin:auto;
-                                        padding: 20px;
-                                        border: 1px solid black;
-                                        width: 80%;
-                                    }
-                                    .close
-                                    {
-                                        color: darkslategrey;
-                                        float: right;
-                                        font-size: 28px;
-                                        font-weight: bold;
-                                    }
-                                    .close:hover, .close:focus 
-                                    {
-                                        color: #000;
-                                        text-decoration: none;
-                                        cursor: pointer;
-                                    }   
-                                </style>
-                            </head>
-                            <body>
-                                <button id="bigButton">Cick Me!</button>
-                                <div id="myModal" class="modal">
-                                    <div class="modalContent">
-                                        <span class="close">&times;</span>
-                                        <p>And this is how Modals work</p>
+                                <head>
+                                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                                    <style>
+                                        .modal
+                                        {
+                                            display: none;
+                                            position: fixed;
+                                            z-index: 1;
+                                            padding-top: 100px;
+                                            left: 0;
+                                            top: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            overflow: auto;
+                                            background-color:rgba(0,0,0,);
+                                            background-color:rgba(0,0,0,0.4)
+                                        }
+                                        .modalContent
+                                        {
+                                            background-color: grey;
+                                            margin:auto;
+                                            padding: 20px;
+                                            border: 1px solid black;
+                                            width: 80%;
+                                        }
+                                        .close
+                                        {
+                                            color: darkslategrey;
+                                            float: right;
+                                            font-size: 28px;
+                                            font-weight: bold;
+                                        }
+                                        .close:hover,
+                                        .close:focus 
+                                        {
+                                            color: #000;
+                                            text-decoration: none;
+                                            cursor: pointer;
+                                        }
+                                        .modalHeader
+                                        {
+                                            padding: 2px 16px;
+                                            background-color: blue;
+                                            color: white;
+                                        }   
+                                        .modalBody
+                                        {
+                                            padding:2px 16px;
+                                        }
+                                        .modalFooter
+                                        {
+                                            padding: 2px 16px;
+                                            background-color: blue;
+                                            color: white;
+                                        }
+                                        
+                                    </style>
+                                </head>
+                                <body>
+                                    <button id="bigButton">Click Me!</button>
+                                    <div id="myModal" class="modal">
+                                        <div class="modalContent">
+                                            <div class="modalHeader">
+                                            <span class="close">&times;</span>
+                                            <h3>The Header</h3>
+                                            </div>
+                                            <div class="modalBody">
+                                                <p>And this is how Modals work</p>
+                                            </div>
+                                            <div class="modalFooter">
+                                                <h4>The Footer</h4>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <script>
-                                    var modal = document.getElementById("myModal");
-                                    var btn = document.getElementById("bigButton");
-                                    var span = document.getElementsByClassName("close")[0];
-                                    btn.onclick = function()
-                                    {
-                                        modal.style.display = "block";
-                                    }
-                                    span.onclick = function()
-                                    {
-                                        modal.style.display = "none";
-                                    }
-                                    window.onclick = function(event)
-                                    {
-                                        if (event.target == modal)
+                                    <script>
+                                        var modal = document.getElementById("myModal");
+                                        var button = document.getElementById("bigButton");
+                                        var span = document.getElementsByClassName("close")[0];
+                                        button.onclick = function()
+                                        {
+                                            modal.style.display = "block";
+                                        }
+                                        span.onclick = function()
                                         {
                                             modal.style.display = "none";
                                         }
-                                    }
-                                </script>
-                            </body>
-                            </html>
+                                        window.onclick = function(event)
+                                        {
+                                            if (event.target == modal)
+                                            {
+                                                modal.style.display = "none";
+                                            }
+                                        }
+                                    </script>
+                                </body>
+                                </html>
                         </textarea>
                     </form>
                     <div class="liveCodeOutput">
+                        <form class="liveCode">
                         <!DOCTYPE html>
                         <html>
                         <head>
@@ -389,18 +420,22 @@
                                 {
                                     display: none;
                                     position: fixed;
+                                    z-index: 1;
                                     padding-top: 100px;
                                     left: 0;
                                     top: 0;
                                     width: 100%;
                                     height: 100%;
                                     overflow: auto;
+                                    background-color:rgba(0,0,0,);
+                                    background-color:rgba(0,0,0,0.4)
                                 }
-                                .modal-content
+                                .modalContent
                                 {
                                     background-color: grey;
                                     margin:auto;
                                     padding: 20px;
+                                    border: 1px solid black;
                                     width: 80%;
                                 }
                                 .close
@@ -416,22 +451,47 @@
                                     color: #000;
                                     text-decoration: none;
                                     cursor: pointer;
+                                }
+                                .modalHeader
+                                {
+                                    padding: 2px 16px;
+                                    background-color: blue;
+                                    color: white;
                                 }   
+                                .modalBody
+                                {
+                                    padding:2px 16px;
+                                }
+                                .modalFooter
+                                {
+                                    padding: 2px 16px;
+                                    background-color: blue;
+                                    color: white;
+                                }
+                                
                             </style>
                         </head>
                         <body>
                             <button id="bigButton">Click Me!</button>
                             <div id="myModal" class="modal">
                                 <div class="modalContent">
+                                    <div class="modalHeader">
                                     <span class="close">&times;</span>
-                                    <p>And this is how Modals work</p>
+                                    <h3>The Header</h3>
+                                    </div>
+                                    <div class="modalBody">
+                                        <p>And this is how Modals work</p>
+                                    </div>
+                                    <div class="modalFooter">
+                                        <h4>The Footer</h4>
+                                    </div>
                                 </div>
                             </div>
                             <script>
                                 var modal = document.getElementById("myModal");
-                                var btn = document.getElementById("bigButton");
+                                var button = document.getElementById("bigButton");
                                 var span = document.getElementsByClassName("close")[0];
-                                btn.onclick = function()
+                                button.onclick = function()
                                 {
                                     modal.style.display = "block";
                                 }
@@ -449,6 +509,7 @@
                             </script>
                         </body>
                         </html>
+                    </form>
                     </div>
                 </div>
             </article>
